@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Input, Radio, notification  } from 'antd';
+import { Link } from "react-router-dom";
 import { useSearchParams } from 'react-router-dom';
 import ReactDOM from "react-dom";
 import {api} from '../api/api'
@@ -78,16 +79,25 @@ const Products = (props) => {
 
       await api.get('categories?status=on').then((res)=>{
           setCategories(res.data)
-      }).finally(()=>{})
+      }).finally(()=>{ })
       
   }
 
   const getProducts = async () => {
 
+    await getCategories();
     setSpinning(true)
     
-    await api.get(url).then((res)=>{
-      setProducts(res.data)
+    await api.get(url).then(async (res) => {
+      let myData;
+      if (category == "all") {
+        myData = await res.data.filter((d) => { return categories.some((c) => { return c.category == d.category}) } )
+      } else {
+        myData = await res.data;
+      }
+      
+      console.log(categories)
+      setProducts(myData)
     }).finally((res)=>{ 
         setSpinning(false); 
     })
@@ -117,7 +127,6 @@ const Products = (props) => {
   useEffect(() => {
     
     getProducts();
-    getCategories();
     setCategoryRadio(category);
    
   }, [category, productName]);
@@ -127,7 +136,7 @@ const Products = (props) => {
 
       <HeadSlider/>
     
-      <section className="products-section mt-7 bigger-container row gx-0 mx-auto">
+      <section className="products-section mt-7 bigger-container row gx-0 mx-auto" id="productsList">
         
         <div className="products-sider col-12 col-lg-4 pe-lg-5 mt-5">
               
@@ -139,6 +148,8 @@ const Products = (props) => {
           
           <Radio.Group onChange={changeCategory} value={categoryRadio} className="d-flex flex-column ant-radio-style mt-4">
 
+            <Radio value="all" className="mb-3">{t('buttons.all')}</Radio>
+
             { categories.map((c , i)=>(
             
               <Radio key={i} value={c.category} className="mb-3">{c[`name_${lan}`]}</Radio>
@@ -147,13 +158,18 @@ const Products = (props) => {
 
           </Radio.Group>
 
+          <Link to="/checkout" className="yellow-btn mt-4 rounded d-inline-block">
+            {t('buttons.checkout')}
+          </Link>
+
         </div>
 
         <div className="products-container col-12 col-lg-8 mt-5" ref={producstCon}>
 
           <ProductsList products={products} addToCart={addToCart} spinning={spinning}/>
-
+          
         </div>
+
       
       </section>
 

@@ -49,8 +49,12 @@ const NavbarNav = (props) => {
                 
                 <ul className="dropdown-menu border-0 rounded-0 p-0">
 
-                { categories.map((c , i)=>(
+                <NavLink className="dropdown-item black-responsive-btn" to={`/products?category=all`}>
+                    {t('subMenu1.item1')}
+                </NavLink>
 
+                { categories.map((c , i)=>(
+                    
                     <li key={i}>
                         <NavLink className="dropdown-item black-responsive-btn" to={`/products?category=${c.category}&status=on`}>
                            {c[`name_${lan}`]}

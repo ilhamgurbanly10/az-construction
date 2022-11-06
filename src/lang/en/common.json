@@ -25,7 +25,10 @@
         "products": "OUR PRODUCTS",
         "price": "Price",
         "year": "Year",
-        "filters": "FILTERS"
+        "filters": "FILTERS",
+        "productsInCart": "PRODUCTS IN CART",
+        "username": "Username",
+        "surname": "Surname"
     },
     "buttons": {
         "viewCart": "VIEW CART",
@@ -34,7 +37,9 @@
         "getQuote": "GET A QUOTE",
         "readMore": "READ MORE",
         "addToCart": "ADD TO CART",
-        "deleteFromCart": "DELETE FROM CART"
+        "deleteFromCart": "DELETE FROM CART",
+        "all": "ALL",
+        "createOrder": "CREATE ORDER"
     },
     "texts": {
         "mainServicesText": "Our goal is to provide the most ideal service for you. We guarantee a beautiful and healthy future with our services.",
@@ -53,7 +58,8 @@
         "successfullyDeleted": "Successfully Deleted",
         "errorOccured": "Some Error Occured",
         "cartIsEmpty": "Cart Is Empty",
-        "productLength": "Number of Products"
+        "productLength": "Number of Products",
+        "orderSuccessfullyCreated": "Order is successfully created"
     },
     "links": {
         "link01": "History",
@@ -71,6 +77,9 @@
     },
     "search": {
         "placeholder": "Search here..."
+    },
+    "form": {
+        "required": "Input must be filled !"
     }
 
 }

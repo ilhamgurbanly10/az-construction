@@ -25,7 +25,10 @@
         "products": "MƏHSULLARIMIZ",
         "price": "Qiymət",
         "year": "İl",
-        "filters": "FİLTERLƏR"
+        "filters": "FİLTERLƏR",
+        "productsInCart": "SƏBƏTDƏ OLAN MƏHSULLAR",
+        "username": "İstifadəçi Adı",
+        "surname": "Soyad"
     },
     "buttons": {
         "viewCart": "SƏBƏTƏ BAX",
@@ -34,7 +37,9 @@
         "getQuote": "TƏKLİF ALIN",
         "readMore": "ƏTRAFLI OXU",
         "addToCart": "SƏBƏTƏ ƏLAVƏ ET",
-        "deleteFromCart": "SƏBƏTDƏN SİL"
+        "deleteFromCart": "SƏBƏTDƏN SİL",
+        "all": "HAMISI",
+        "createOrder": "SİFARİŞ YARAT"
     },
     "texts": {
         "mainServicesText": "Məqsədimiz sizin üçün ən ideal xidməti göstərməkdir.Gözəl və sağlam gələcəyə xidmətlərimiz ilə zəmanət veririrk.",
@@ -53,7 +58,8 @@
         "successfullyDeleted": "Uğurla Silindi",
         "errorOccured": "Xəta Baş Verdi",
         "cartIsEmpty": "Səbət Boşdur",
-        "productLength": "Məhsulların Sayı"
+        "productLength": "Məhsulların Sayı",
+        "orderSuccessfullyCreated": "Sifariş Uğurla Yaradıldı"
     },
     "links": {
         "link01": "Tarix",
@@ -71,6 +77,9 @@
     },
     "search": {
         "placeholder": "Buradan axtarın..."
+    },
+    "form": {
+        "required": "İnput Doldurulmalıdır !"
     }
 
 }

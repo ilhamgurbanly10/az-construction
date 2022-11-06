@@ -25,7 +25,10 @@
         "products": "UNSERE PRODUKTE",
         "price": "Preis",
         "year": "Jahr",
-        "filters": "FILTER"
+        "filters": "FILTER",
+        "productsInCart": "PRODUKTE IM WARENKORB",
+        "username": "Benutzername",
+        "surname": "Nachname"
     },
     "buttons": {
         "viewCart": "WARENKORB ANSEHEN",
@@ -34,7 +37,9 @@
         "getQuote": "BEKOMMEN EIN ANGEBOT",
         "readMore": "LESEN MEHR",
         "addToCart": "IN DEN WARENKORB HINZUFÜGEN",
-        "deleteFromCart": "LÖSCHEN VON WARENKORB"
+        "deleteFromCart": "LÖSCHEN VON WARENKORB",
+        "all": "ALLES",
+        "createOrder": "BESTELLUNG ANLEGEN"
     },
     "texts": {
         "mainServicesText": "Unser Ziel ist es, Ihnen den idealen Service zu bieten und mit unseren Dienstleistungen eine schöne und gesunde Zukunft zu garantieren.",
@@ -53,7 +58,8 @@
         "successfullyDeleted": "Erfolgreich Gelöscht",
         "errorOccured": "Manche Fehler Sind Passiert",
         "cartIsEmpty": "Einkaufswagen ist leer",
-        "productLength": "Nummer von Produkten"
+        "productLength": "Nummer von Produkten",
+        "orderSuccessfullyCreated": "Auftrag wurde erfolgreich erstellt"
     },
     "links": {
         "link01": "Geschichte",
@@ -71,6 +77,9 @@
     },
     "search": {
         "placeholder": "Suchen hier..."
+    },
+    "form": {
+        "required": "Input soll gefüllt werden !"
     }
 }
 

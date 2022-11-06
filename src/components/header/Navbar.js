@@ -1,6 +1,6 @@
 import { logo } from '../files/Images';
 import {useEffect, useRef} from 'react';
-import { NavLink } from "react-router-dom";
+import { NavLink, Link  } from "react-router-dom";
 import closeNavbarNav from '../navbar/Navbar';
 import {useTranslation} from "react-i18next";
 import NavbarNav from './NavbarNav';
@@ -28,7 +28,7 @@ const Navbar = (props) => {
 
           <div className="navbar-container d-flex flex-wrap justify-content-between align-items-center align-content-center w-100">
 
-            <NavLink className="navbar-brand d-block" to="/">
+            <NavLink className="navbar-brand d-block" to="/#pageFooter">
               <img src={logo} alt="Navbar Brand" className="brand-img-2" />
             </NavLink>
             

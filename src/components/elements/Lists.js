@@ -662,13 +662,14 @@ export const MyCart = (props) => {
             icon: <WarningOutlined style={{ color: '#108ee9' }} />,
             });
         }).finally(()=>{
-            setSubtotal(0)
+            setSubtotal(0);
+            setTimeout(() => { window.location.reload() }, 1000)
         })
     } 
 
     useEffect(() => {
         getCart();
-    }, [cart, subtotal]);
+    }, [subtotal]);
 
 
     return(
@@ -706,7 +707,7 @@ export const MyCart = (props) => {
 
             </div>
 
-            <h3 className="grey-title w-100 mt-5">{ `${t('titles.subtotal')}: $${subtotal}`  }</h3>
+            { cart.length > 0 && <h3 className="grey-title w-100 mt-5">{ `${t('titles.subtotal')}: $${subtotal}`  }</h3> }
 
         </section>
     )

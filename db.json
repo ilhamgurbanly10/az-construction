@@ -45,14 +45,6 @@
   ],
   "categories": [
     {
-      "id": 1,
-      "category": "all",
-      "name_az": "HAMISI",
-      "name_en": "ALL",
-      "name_de": "ALLES",
-      "status": "on"
-    },
-    {
       "id": 2,
       "category": "construction-materials",
       "name_az": "TİKİNTİ MATERİALLARI",
@@ -66,7 +58,7 @@
       "name_az": "MƏTBƏX ƏŞYALARI",
       "name_en": "KITCHEN UTENSILS",
       "name_de": "BAKÜCHENUTENSILIENU",
-      "status": "on"
+      "status": "off"
     },
     {
       "id": 4,
@@ -89,7 +81,7 @@
       "img": "https://ytong-werkzeugshop.de/media/catalog/product/cache/7b5f489b93236117d7365c81a477e1d5/3/0/304148_web_05_2.jpg",
       "price": "150.33",
       "year": "2021",
-      "status": "off",
+      "status": "on",
       "id": 1,
       "key": 1
     },
@@ -147,7 +139,7 @@
       "img": "https://media.xxxlutz.com/i/xxxlutz/PI2vpWcKdXV0Wq6orExN9F_Q",
       "price": "780.00",
       "year": "2018",
-      "status": "off"
+      "status": "on"
     }
   ],
   "cart": [
@@ -174,6 +166,30 @@
       "year": "2001",
       "username": "Ilham Gurbanly",
       "id": 2
+    },
+    {
+      "productId": 2,
+      "category": "kitchen-utensils",
+      "name_az": "Mikser",
+      "name_en": "Mixer",
+      "name_de": "Mixer",
+      "img": "https://irshad.az/resized/resize315/center/products/78660/sencor-stm-3754rd.jpg",
+      "price": "190.00",
+      "year": "2020",
+      "username": "Ilham Gurbanly",
+      "id": 3
+    },
+    {
+      "productId": 4,
+      "category": "household-things",
+      "name_az": "Qarderob",
+      "name_en": "Wardrobe",
+      "name_de": "Kleiderschrank",
+      "img": "https://www.fantasticfurniture.com.au/medias/EDEUTIOOOOOOPABOAK-LIF-CONTAINER-original-FantasticFurniture-WF-Product-Detail?context=bWFzdGVyfGltYWdlc3wxMzQwMzN8aW1hZ2UvanBlZ3xoZmMvaDE0Lzk0NTg3MzEzODQ4NjIvRURFVVRJT09PT09PUEFCT0FLX0xJRl9DT05UQUlORVJfb3JpZ2luYWxfRmFudGFzdGljRnVybml0dXJlLVdGX1Byb2R1Y3QtRGV0YWlsfDNlOTRhNzEyMjhkMDFlNzRkZmYzMGQ3ODQ1ZTA5YTAwMTU3ZGYyMTFjODExMmVjZTUzZDU5NTczMTFjMmI1M2U",
+      "price": "299.99",
+      "year": "2001",
+      "username": "Ilham Gurbanly",
+      "id": 4
     }
   ],
   "main-slider": [
@@ -225,5 +241,7 @@
       "id": 4,
       "key": 2
     }
-  ]
+  ],
+  "orderedProducts": [
+  ]  
 }

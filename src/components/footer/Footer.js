@@ -9,7 +9,7 @@ const Footer = () => {
     const {t, i18n} = useTranslation('common');
 
     return (
-        <footer className='footer mt-7'>      
+        <footer className='footer mt-7' id="pageFooter">      
 
             <div className="footer-container bigger-container py-8 bg-black  d-flex flex-column flex-lg-row justify-content-start justify-content-lg-between align-items-start row w-100 gx-0">
                 <AboutUsList/>

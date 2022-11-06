@@ -88,6 +88,7 @@ export const Cart = (props) => {
     let price = 0;
 
     const createCart = (data) => {
+
       for (let i = 0, x = 0; i < data.length; i++) {
         
         const info = findKey(data[i].productId);
@@ -107,6 +108,7 @@ export const Cart = (props) => {
       }
      
       setCart(productsInCart)
+
     }
 
     const findKey = (index) => {
@@ -131,24 +133,26 @@ export const Cart = (props) => {
 
     const deleteFromCart = async (id) => {
       
-    await api.delete(`/cart/${id}`).then((res)=>{
-        notification.open({
-          message: t('texts.successfullyDeleted'),
-          icon: <WarningOutlined style={{ color: '#108ee9' }} />,
-        });
-    }).catch(()=>{
-        notification.open({
-          message: t('texts.errorOccured'),
-          icon: <WarningOutlined style={{ color: '#108ee9' }} />,
-        });
-    }).finally(()=>{
-      setSubtotal(0)
-    })
+      await api.delete(`/cart/${id}`).then((res)=>{
+          notification.open({
+            message: t('texts.successfullyDeleted'),
+            icon: <WarningOutlined style={{ color: '#108ee9' }} />,
+          });
+      }).catch(()=>{
+          notification.open({
+            message: t('texts.errorOccured'),
+            icon: <WarningOutlined style={{ color: '#108ee9' }} />,
+          });
+      }).finally(()=>{
+        setSubtotal(0)
+        setTimeout(() => { window.location.reload() }, 1000)
+      })
+
     } 
 
     useEffect(() => {
       getCart();
-    }, [cart, subtotal]);
+    }, [subtotal]);
 
 
     const cartContent = (
@@ -202,10 +206,12 @@ export const Cart = (props) => {
             key: '4',
             label: (
                 <div className="cart-item mt-4 normal-min-width">
-                  <p className="cart-subtotal grey-text">
-                      <span className="fw-bold black-color">{t('titles.subtotal')}: </span>
-                      $ {subtotal}
-                  </p>
+                  { cart.length > 0 &&
+                    <p className="cart-subtotal grey-text">
+                        <span className="fw-bold black-color">{t('titles.subtotal')}: </span>
+                        $ {subtotal}
+                    </p>
+                  }
                 </div>
             ),
           },
@@ -218,7 +224,7 @@ export const Cart = (props) => {
                       {t('buttons.viewCart')}
                     </Link>
 
-                    <Link to="/" className="yellow-btn px-0 col ms-2">
+                    <Link to="/checkout" className="yellow-btn px-0 col ms-2">
                       {t('buttons.checkout')}
                     </Link>
 
@@ -242,7 +248,7 @@ export const Cart = (props) => {
             >
                 <Button className="white-iconic-btn yellow-color-on-hover bigger-font ms-3 btn-rotate">
                     <i className="fa fa-shopping-cart"></i>
-                    <span className="yellow-length-circle">{cartLength}</span>
+                    <span className="yellow-length-circle">{cart.length > 0 ? cartLength : '0'}</span>
                 </Button>
           </Dropdown> 
            

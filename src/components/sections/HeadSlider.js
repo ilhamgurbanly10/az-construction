@@ -22,7 +22,7 @@ const HeadSlider = (props) => {
 
     useEffect(() => {
         getData();
-    }, [data]);
+    }, []);
 
     return (
         <section className="head-slider-section overflow-hidden">
