@@ -142,56 +142,7 @@
       "status": "on"
     }
   ],
-  "cart": [
-    {
-      "productId": 3,
-      "category": "household-things",
-      "name_az": "Masa",
-      "name_en": "Table",
-      "name_de": "Tishc",
-      "img": "https://www.ikea.com/om/en/images/products/lisabo-table-black__0737106_pe740884_s5.jpg?f=s",
-      "price": "199.99",
-      "year": "2022",
-      "username": "Ilham Gurbanly",
-      "id": 1
-    },
-    {
-      "productId": 4,
-      "category": "household-things",
-      "name_az": "Qarderob",
-      "name_en": "Wardrobe",
-      "name_de": "Kleiderschrank",
-      "img": "https://www.fantasticfurniture.com.au/medias/EDEUTIOOOOOOPABOAK-LIF-CONTAINER-original-FantasticFurniture-WF-Product-Detail?context=bWFzdGVyfGltYWdlc3wxMzQwMzN8aW1hZ2UvanBlZ3xoZmMvaDE0Lzk0NTg3MzEzODQ4NjIvRURFVVRJT09PT09PUEFCT0FLX0xJRl9DT05UQUlORVJfb3JpZ2luYWxfRmFudGFzdGljRnVybml0dXJlLVdGX1Byb2R1Y3QtRGV0YWlsfDNlOTRhNzEyMjhkMDFlNzRkZmYzMGQ3ODQ1ZTA5YTAwMTU3ZGYyMTFjODExMmVjZTUzZDU5NTczMTFjMmI1M2U",
-      "price": "299.99",
-      "year": "2001",
-      "username": "Ilham Gurbanly",
-      "id": 2
-    },
-    {
-      "productId": 2,
-      "category": "kitchen-utensils",
-      "name_az": "Mikser",
-      "name_en": "Mixer",
-      "name_de": "Mixer",
-      "img": "https://irshad.az/resized/resize315/center/products/78660/sencor-stm-3754rd.jpg",
-      "price": "190.00",
-      "year": "2020",
-      "username": "Ilham Gurbanly",
-      "id": 3
-    },
-    {
-      "productId": 4,
-      "category": "household-things",
-      "name_az": "Qarderob",
-      "name_en": "Wardrobe",
-      "name_de": "Kleiderschrank",
-      "img": "https://www.fantasticfurniture.com.au/medias/EDEUTIOOOOOOPABOAK-LIF-CONTAINER-original-FantasticFurniture-WF-Product-Detail?context=bWFzdGVyfGltYWdlc3wxMzQwMzN8aW1hZ2UvanBlZ3xoZmMvaDE0Lzk0NTg3MzEzODQ4NjIvRURFVVRJT09PT09PUEFCT0FLX0xJRl9DT05UQUlORVJfb3JpZ2luYWxfRmFudGFzdGljRnVybml0dXJlLVdGX1Byb2R1Y3QtRGV0YWlsfDNlOTRhNzEyMjhkMDFlNzRkZmYzMGQ3ODQ1ZTA5YTAwMTU3ZGYyMTFjODExMmVjZTUzZDU5NTczMTFjMmI1M2U",
-      "price": "299.99",
-      "year": "2001",
-      "username": "Ilham Gurbanly",
-      "id": 4
-    }
-  ],
+  "cart": [],
   "main-slider": [
     {
       "name_az": "XOŞ GƏLMİSİNİZ",
@@ -243,5 +194,84 @@
     }
   ],
   "orderedProducts": [
-  ]  
+    {
+      "username": "Murad ",
+      "surname": "Nerimanli",
+      "address": "Baki",
+      "length": 5,
+      "subtotal": 1140.3,
+      "date": "09.11.2022",
+      "products": [
+        [
+          {
+            "productId": 3,
+            "category": "household-things",
+            "name_az": "Masa",
+            "name_en": "Table",
+            "name_de": "Tishc",
+            "img": "https://www.ikea.com/om/en/images/products/lisabo-table-black__0737106_pe740884_s5.jpg?f=s",
+            "price": "199.99",
+            "year": "2022",
+            "username": "Ilham Gurbanly",
+            "id": 1
+          }
+        ],
+        [
+          {
+            "productId": 4,
+            "category": "household-things",
+            "name_az": "Qarderob",
+            "name_en": "Wardrobe",
+            "name_de": "Kleiderschrank",
+            "img": "https://www.fantasticfurniture.com.au/medias/EDEUTIOOOOOOPABOAK-LIF-CONTAINER-original-FantasticFurniture-WF-Product-Detail?context=bWFzdGVyfGltYWdlc3wxMzQwMzN8aW1hZ2UvanBlZ3xoZmMvaDE0Lzk0NTg3MzEzODQ4NjIvRURFVVRJT09PT09PUEFCT0FLX0xJRl9DT05UQUlORVJfb3JpZ2luYWxfRmFudGFzdGljRnVybml0dXJlLVdGX1Byb2R1Y3QtRGV0YWlsfDNlOTRhNzEyMjhkMDFlNzRkZmYzMGQ3ODQ1ZTA5YTAwMTU3ZGYyMTFjODExMmVjZTUzZDU5NTczMTFjMmI1M2U",
+            "price": "299.99",
+            "year": "2001",
+            "username": "Ilham Gurbanly",
+            "id": 2
+          },
+          {
+            "productId": 4,
+            "category": "household-things",
+            "name_az": "Qarderob",
+            "name_en": "Wardrobe",
+            "name_de": "Kleiderschrank",
+            "img": "https://www.fantasticfurniture.com.au/medias/EDEUTIOOOOOOPABOAK-LIF-CONTAINER-original-FantasticFurniture-WF-Product-Detail?context=bWFzdGVyfGltYWdlc3wxMzQwMzN8aW1hZ2UvanBlZ3xoZmMvaDE0Lzk0NTg3MzEzODQ4NjIvRURFVVRJT09PT09PUEFCT0FLX0xJRl9DT05UQUlORVJfb3JpZ2luYWxfRmFudGFzdGljRnVybml0dXJlLVdGX1Byb2R1Y3QtRGV0YWlsfDNlOTRhNzEyMjhkMDFlNzRkZmYzMGQ3ODQ1ZTA5YTAwMTU3ZGYyMTFjODExMmVjZTUzZDU5NTczMTFjMmI1M2U",
+            "price": "299.99",
+            "year": "2001",
+            "username": "Ilham Gurbanly",
+            "id": 4
+          }
+        ],
+        [
+          {
+            "productId": 2,
+            "category": "kitchen-utensils",
+            "name_az": "Mikser",
+            "name_en": "Mixer",
+            "name_de": "Mixer",
+            "img": "https://irshad.az/resized/resize315/center/products/78660/sencor-stm-3754rd.jpg",
+            "price": "190.00",
+            "year": "2020",
+            "username": "Ilham Gurbanly",
+            "id": 3
+          }
+        ],
+        [
+          {
+            "productId": 1,
+            "category": "construction-materials",
+            "name_az": "Mişar",
+            "name_en": "Saw",
+            "name_de": "Säge",
+            "img": "https://ytong-werkzeugshop.de/media/catalog/product/cache/7b5f489b93236117d7365c81a477e1d5/3/0/304148_web_05_2.jpg",
+            "price": "150.33",
+            "year": "2021",
+            "username": "Ilham Gurbanly",
+            "id": 5
+          }
+        ]
+      ],
+      "id": 1
+    }
+  ]
 }

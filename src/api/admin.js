@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 export const admin = axios.create({
-  baseURL:  `http://localhost:3002`,
+  baseURL:  `https://imat-admin.herokuapp.com/api`,
   headers: { "Content-Type": "application/json" },
 });
 
